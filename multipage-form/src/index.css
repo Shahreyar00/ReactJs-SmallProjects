@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+
+.remove-button{
+    display: none;
+}
+
+.offscreen{
+    position: absolute;
+    left: -10000px;
+}
+
+.split-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 1rem;
+}
+
+.flex-col {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.35rem;
+    width: 100%;
+}
+
+input:invalid {
+    border: 1px solid red;
+    background-color: rgb(248, 222, 177);
+}
+
+
+body {
+    min-height: 100vh;
+    background: skyblue;
+    padding: 1rem;
+   
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+#root {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+}
+
+.progress-container {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: white;
+}
+  
+.barmarker-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+  
+.barmarker {
+    width: 100%;
+    display: grid;
+    place-content: center;
+}
+  
+.barmarker:is(:not(:last-child)) {
+    border-right: 1px solid #000;
+}
+  
+.progress {
+    width: 100%;
+    height: 24px;
+}
+  
+.form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+  
+.form-header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.button-container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 0.5rem;
+}
+  
+.button {
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(86, 86, 245);
+    color: white;
+    cursor: pointer;
+}
+  
+.button:focus {
+    outline: 2px solid gold;
+}
+  
+input,
+select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid gray;
+    outline: none;
+}
+  
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    margin-right: 0.5rem;
+}
+  
+ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
