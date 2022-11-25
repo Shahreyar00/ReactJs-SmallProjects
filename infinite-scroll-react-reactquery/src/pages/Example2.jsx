@@ -47,7 +47,7 @@ const Example2 = () => {
     return (
         <div className="example1">
             <div className="exampleWrapper">
-                <h1 id="top">&infin; Infinite Query &amp; Scroll<br />&infin;React Query</h1>
+                <h1 id="top">&infin; Infinite Query &amp; Scroll<br />&infin;Ex-2:React Query</h1>
                 {content}
                 {isFetchingNextPage && <p className="center">Loading More Posts...</p>}
                 <p className="center"><a href="#top">Back to Top</a></p>
